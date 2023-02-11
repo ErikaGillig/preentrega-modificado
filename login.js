@@ -11,15 +11,15 @@ status = prompt("Sos Nuevo usuario?");
 }
 
 function porSi(){
-        document.getElementsByClassName("button_par")[0];
+        document.getElementsByClassName("button_acceso")[0];
     }  
 
 if (name != respuesta && status === nuevo){
-        document.getElementsByClassName("button_par")[0].innerHTML = "Bienvenido/a " + question + ", porfavor cree una cuenta";
+        document.getElementsByClassName("button_acceso")[0].innerHTML = "Bienvenido/a " + question + ", porfavor cree una cuenta";
     }else if(name === respuesta){
         porSi(); 
     }else{
-        document.getElementsByClassName("button_par")[0].innerHTML = "<span>Ocurrio un error intente poner su nombre nuevamente </span>";
+        document.getElementsByClassName("button_acceso")[0].innerHTML = "<span>Ocurrio un error intente poner su nombre nuevamente </span>";
     } 
 
 }
@@ -27,6 +27,6 @@ if (name != respuesta && status === nuevo){
 function logout(){
 
     // window.location.reload(); only works with your environnement or website
-  document.getElementsByClassName("button_par")[0].innerHTML = "";
+  document.getElementsByClassName("button_acceso")[0].innerHTML = "";
 }
 
